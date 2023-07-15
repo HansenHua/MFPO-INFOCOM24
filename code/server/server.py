@@ -144,6 +144,6 @@ class Server:
             item.grad = g_list[idx]
     
     def save_model(self, agent):
-        torch.save(agent.critic.dtate_dict(),'./code/log/' + self.env_name + '/current_critic.pkl')
-        torch.save(agent.target.dtate_dict(),'./code/log/' + self.env_name + '/current_target.pkl')
-        torch.save(agent.network.dtate_dict(),'./code/log/' + self.env_name + '/current_network.pkl')
+        torch.save(agent.critic.state_dict(),'./code/log/' + self.env_name + '/current_critic.pkl')
+        torch.save(agent.target.state_dict(),'./code/log/' + self.env_name + '/current_target.pkl')
+        torch.save(agent.network.state_dict(),'./code/log/' + self.env_name + '/current_network.pkl')
