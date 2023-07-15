@@ -66,6 +66,8 @@ class Server:
         self.master.target.load_state_dict(global_weights_target)
         self.master.network.load_state_dict(global_weights_network)
         self.master.critic.load_state_dict(global_weights_critic)
+
+        self.save_model(self.master)
         
         for id, w in enumerate(self.worker_list):
             if self.average_type == 'target':
@@ -93,6 +95,8 @@ class Server:
             self.worker_test = Worker_discrete()
         else:
             self.worker_test = Worker_continuous()
+        
+        self.worker_test.network.load_state_dict(torch.load(os.path.join('./log', self.env_name, 'best_model.pkl')))
         
         file = open('report_test.txt', 'a')
         sum_r = 0
@@ -138,3 +142,8 @@ class Server:
     def reset_grad(self, worker_id, g_list):
         for idx, item in enumerate(self.worker_list[worker_id].network.parameters()):
             item.grad = g_list[idx]
+    
+    def save_model(self, agent):
+        torch.save(agent.critic.dtate_dict(),'./code/log/' + self.env_name + '/current_critic.pkl')
+        torch.save(agent.target.dtate_dict(),'./code/log/' + self.env_name + '/current_target.pkl')
+        torch.save(agent.network.dtate_dict(),'./code/log/' + self.env_name + '/current_network.pkl')
