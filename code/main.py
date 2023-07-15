@@ -47,5 +47,3 @@ for i in range(10000):
     else:
         # server.test()
         server.train(i)
-
-wandb.finish()
