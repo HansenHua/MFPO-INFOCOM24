@@ -85,8 +85,30 @@ class Server:
             gradient.append(grad)
 
 
-    def test(self, ):
+    def log(self, ):
         score = self.master.test(self.cur_step)
+    
+    def test(self, ):
+        if self.env_name in ['Pong-v4', 'Breakout-v4', 'CartPole-v1']:
+            self.worker_test = Worker_discrete()
+        else:
+            self.worker_test = Worker_continuous()
+        
+        file = open('report_test.txt', 'a')
+        sum_r = 0
+        for _ in range(10):
+            state = self.env.reset()
+            while True:
+                action, _ = self.worker_test.gen_action(state)
+                if self.env_name in ['Pong-v4', 'Breakout-v4', 'CartPole-v1']:
+                    action = action
+                else:
+                    action = action.numpy()
+                state, reward, done, _ = self.env.step(action)
+                sum_r += reward
+                if done:
+                    break
+        file.write('test result :' + str(sum_r / 10) +'\n')
     
     def average_gradient(self, g, good_set):
         if self.fault_type == None:
