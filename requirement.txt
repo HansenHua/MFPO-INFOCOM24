@@ -1,4 +1,5 @@
 mujoco-py==2.1.2.14
 numpy==1.23.1
+mujoco-py==2.1.0
 gym[mujoco_py,classic_control]==0.23.0
 torch==1.8.1
