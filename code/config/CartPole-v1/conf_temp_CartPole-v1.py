@@ -5,7 +5,7 @@ METHOD_CONF = {
     'learning_rate_c': 1e-4,
     'gamma': 0.99,
     'eps': 1e-5,
-    'env_name': 'Pendulum-v2',
+    'env_name': 'CartPole-v1',
     'average_type': 'target',
     'fault_type': None,
     'num_worker': 10,
