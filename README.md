@@ -95,14 +95,7 @@ You could adapt it to your own needs.
 	```
 2. Illustration
 We alse provide the performance of our model. The illustration videos are stored in [MFPO-Online-Federated-Reinforcement-Learning/performance](https://github.com/HansenHua/MFPO-Online-Federated-Reinforcement-Learning/tree/main/performance).
-<!-- ![photo](./performance/CartPole-v1/CartPort.gif)
-![photo](./performance/Breakout-v4/Breakout.gif) -->
-<figure class="half">
-<!-- <img src="./performance/CartPole-v1/CartPort.gif" width=600/>
-<img src="./performance/Pendulum-v2/Pendulum.gif" width=600/> -->
-<img src="./performance/Breakout-v4/Breakout.gif" width=200/>
-<img src="./performance/Pong-v4/Pong.gif" width=195/>
-</figure>
+
 
 ## :e-mail: Contact
 
