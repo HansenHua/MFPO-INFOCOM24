@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    method_conf = importlib.import_module('conf_temp_' + args.env_name).METHOD_CONF
+    method_conf = importlib.import_module('config.' + args.env_name + '.conf_temp_' + args.env_name).METHOD_CONF
 
     global_dict_init()
     set_global_dict_value('method_conf', method_conf)
