@@ -3,7 +3,7 @@ from server.server import Server
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--env_name', type=str, default='LunarLanderContinuous-v2', help='the name of environment')
+    parser.add_argument('--env_name', type=str, default='CartPole-v1', help='the name of environment')
     parser.add_argument('--method', type=str, default='MFPO', help='method name')
     parser.add_argument('--gamma', type=float, default=0.99, help='gamma')
     parser.add_argument('--batch_size', type=int, default=20, help='batch_size')
