@@ -103,7 +103,7 @@ We alse provide the performance of our model. The illustration videos are stored
 <img src="./performance/Pendulum-v2/Pendulum.gif" width=300/>
 </center>
 <center class="half">
-<img src="./performance/Breakout-v4/Breakout.gif" width=100/>
+<img src="./performance/Breakout-v4/Breakout.gif" width=150/>
 </center>
 <br/>
 <center class="half">
