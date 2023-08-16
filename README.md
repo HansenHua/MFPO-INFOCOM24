@@ -76,7 +76,7 @@ You could adapt it to your own needs.
 2. Training
 	```
     python main.py CartPole-v1 MFPO train
-    python main.py Pendulum-v2 MFPO train
+    python main.py Pendulum-v1 MFPO train
 	python main.py HalfCheetah-v2 MFPO train
 	python main.py Hopper-v2 MFPO train
     python main.py Pong-v4 MFPO train
