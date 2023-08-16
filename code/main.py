@@ -16,8 +16,8 @@ if __name__ == '__main__':
     parser.add_argument('--seed', type=int, default=0, help='random seed')
     parser.add_argument('--lr_a', type=float, default=1e-4, help='learning rate of actor')
     parser.add_argument('--lr_c', type=float, default=1e-4, help='learning rate of critic')
-    parser.add_argument('mode', type=str, default='train', help='train or test')
-    parser.add_argument('max_iteration', type=int, default=2000, help='maximum training iteration')
+    parser.add_argument('--mode', type=str, default='train', help='train or test')
+    parser.add_argument('--max_iteration', type=int, default=2000, help='maximum training iteration')
 
     args = parser.parse_args()
 
