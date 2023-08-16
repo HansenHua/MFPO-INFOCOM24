@@ -48,7 +48,7 @@ class Worker_continuous(nn.Module):
         self.method_conf = get_global_dict_value('method_conf')
         self.fault_type = self.method_conf['fault_type']
         self.env_name = self.method_conf['env_name']
-        self.env = gym.make(self.env_name)
+        self.env = Env(self.env_name)
         self.learning_rate_a = self.method_conf['learning_rate_a']
         self.learning_rate_c = self.method_conf['learning_rate_c']
         self.max_step = 1000
@@ -56,7 +56,7 @@ class Worker_continuous(nn.Module):
         self.c = self.method_conf['c']
         self.observation_space = self.env.env.observation_space.shape[0]
         self.action_space = self.env.env.action_space.shape[0]
-        self.max_action = float(self.env.action_space.high[0])
+        self.max_action = float(self.env.env.action_space.high[0])
         self.network = policy(self.observation_space, self.action_space)
         self.old_network = policy(self.observation_space, self.action_space)
         self.critic = critic(self.observation_space)
