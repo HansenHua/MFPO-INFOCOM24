@@ -7,7 +7,7 @@ class Worker_discrete(nn.Module):
         self.method_conf = get_global_dict_value('method_conf')
         self.fault_type = self.method_conf['fault_type']
         self.env_name = self.method_conf['env_name']
-        self.env = gym.make(self.env_name)
+        self.env = Env(self.env_name)
         self.learning_rate_a = self.method_conf['learning_rate_a']
         self.learning_rate_c = self.method_conf['learning_rate_c']
         self.max_step = 1000
