@@ -12,7 +12,7 @@ class Env:
         if self.env_name in ['Pong-v4', 'Breakout-v4', 'CartPole-v1']:
             action = action
         else:
-            action = action.numpy()
+            action = action
         return self.env.step(action)
     
     def gen_obs(self, action):
