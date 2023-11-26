@@ -56,31 +56,14 @@ optional arguments:
 Test the trained models provided in [MFPO-Momentum-assisted Federated Policy Optimization](https://github.com/HansenHua/MFPO-Online-Federated-Reinforcement-Learning/tree/main/log).
 ```
 python main.py CartPole-v1 MFPO test
-python main.py Pendulum-v2 MFPO test
-python main.py HalfCheetah-v2 MFPO test
-python main.py Hopper-v2 MFPO test
-python main.py Pong-v4 MFPO test
-python main.py Breakout-v4 MFPO test
 ```
 ## :computer: Training
 
 We provide complete training codes for MFPO.<br>
 You could adapt it to your own needs.
 
-1. If you don't have NVIDIA RTX A6000, you should comment these two lines in file
-[MFPO-Momentum-assisted Federated Policy Optimization/code/util.py](https://github.com/HansenHua/MFPO-Online-Federated-Reinforcement-Learning/tree/main/code/util.py).
-	```
-	torch.backends.cuda.matmul.allow_tf32 = False
-	torch.backends.cudnn.allow_tf32 = False
-	```
-2. Training
 	```
     python main.py CartPole-v1 MFPO train
-    python main.py Pendulum-v1 MFPO train
-	python main.py HalfCheetah-v2 MFPO train
-	python main.py Hopper-v2 MFPO train
-    python main.py Pong-v4 MFPO train
-    python main.py Breakout-v4 MFPO train
 	```
 	The log files will be stored in [MFPO-Online-Federated-Reinforcement-Learning/code/log](https://github.com/HansenHua/MFPO-Online-Federated-Reinforcement-Learning/tree/main/code/log).
 ## :checkered_flag: Testing
