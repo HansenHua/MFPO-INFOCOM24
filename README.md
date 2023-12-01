@@ -70,11 +70,6 @@ You could adapt it to your own needs.
 1. Testing
 	```
 	python main.py CartPole-v1 MFPO test
-    python main.py Pendulum-v2 MFPO test
-	python main.py HalfCheetah-v2 MFPO test
-	python main.py Hopper-v2 MFPO test
-    python main.py Pong-v4 MFPO test
-    python main.py Breakout-v4 MFPO test
 	```
 2. Illustration
 
