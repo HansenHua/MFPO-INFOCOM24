@@ -10,7 +10,7 @@ Momentum-assisted Federated Policy Optimization (MFPO), capable of jointly optim
 ### Installation
 1. Clone repo
     ```bash
-    git clone https://github.com/HansenHua/MFPO-Online-Federated-Reinforcement-Learning.git
+    git clone [https://github.com/HansenHua/MFPO-Online-Federated-Reinforcement-Learning.git](https://github.com/HansenHua/MFPO-INFOCOM24.git)
     cd MFPO-Online-Federated-Reinforcement-Learning
     ```
 2. Install dependent packages
@@ -53,7 +53,7 @@ optional arguments:
   --lr_a LR_A           learning rate of actor
   --lr_c LR_C           learning rate of critic
 ```
-Test the trained models provided in [MFPO-Momentum-assisted Federated Policy Optimization](https://github.com/HansenHua/MFPO-Online-Federated-Reinforcement-Learning/tree/main/log).
+Test the trained models provided in [MFPO-Momentum-assisted Federated Policy Optimization](https://github.com/HansenHua/MFPO-INFOCOM24/tree/main/log).
 ```
 python main.py CartPole-v1 MFPO test
 ```
@@ -65,7 +65,7 @@ You could adapt it to your own needs.
 	```
     python main.py CartPole-v1 MFPO train
 	```
-	The log files will be stored in [MFPO-Online-Federated-Reinforcement-Learning/code/log](https://github.com/HansenHua/MFPO-Online-Federated-Reinforcement-Learning/tree/main/code/log).
+	The log files will be stored in [MFPO-Online-Federated-Reinforcement-Learning/code/log](https://github.com/HansenHua/MFPO-INFOCOM24/tree/main/code/log).
 ## :checkered_flag: Testing
 1. Testing
 	```
@@ -73,7 +73,7 @@ You could adapt it to your own needs.
 	```
 2. Illustration
 
-We alse provide the performance of our model. The illustration videos are stored in [MFPO-Online-Federated-Reinforcement-Learning/performance](https://github.com/HansenHua/MFPO-Online-Federated-Reinforcement-Learning/tree/main/performance).
+We alse provide the performance of our model. The illustration videos are stored in [MFPO-Online-Federated-Reinforcement-Learning/performance](https://github.com/HansenHua/MFPO-INFOCOM24/tree/main/performance).
 
 ## :e-mail: Contact
 
