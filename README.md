@@ -10,8 +10,8 @@ Momentum-assisted Federated Policy Optimization (MFPO), capable of jointly optim
 ### Installation
 1. Clone repo
     ```bash
-    git clone [https://github.com/HansenHua/MFPO-Online-Federated-Reinforcement-Learning.git](https://github.com/HansenHua/MFPO-INFOCOM24.git)
-    cd MFPO-Online-Federated-Reinforcement-Learning
+    git clone [https://github.com/HansenHua/MFPO-INFOCOM24.git](https://github.com/HansenHua/MFPO-INFOCOM24.git)
+    cd MFPO-INFOCOM24
     ```
 2. Install dependent packages
     ```
@@ -65,7 +65,7 @@ You could adapt it to your own needs.
 	```
     python main.py CartPole-v1 MFPO train
 	```
-	The log files will be stored in [MFPO-Online-Federated-Reinforcement-Learning/code/log](https://github.com/HansenHua/MFPO-INFOCOM24/tree/main/code/log).
+	The log files will be stored in [MFPO-INFOCOM24/code/log](https://github.com/HansenHua/MFPO-INFOCOM24/tree/main/code/log).
 ## :checkered_flag: Testing
 1. Testing
 	```
@@ -73,8 +73,8 @@ You could adapt it to your own needs.
 	```
 2. Illustration
 
-We alse provide the performance of our model. The illustration videos are stored in [MFPO-Online-Federated-Reinforcement-Learning/performance](https://github.com/HansenHua/MFPO-INFOCOM24/tree/main/performance).
+We alse provide the performance of our model. The illustration videos are stored in [MFPO-INFOCOM24/performance](https://github.com/HansenHua/MFPO-INFOCOM24/tree/main/performance).
 
 ## :e-mail: Contact
 
-If you have any question, please email `xingyuanhua@bit.edu.cn`.
+If you have any question, please email `huaxy24@mails.tsinghua.edu.cn`.
